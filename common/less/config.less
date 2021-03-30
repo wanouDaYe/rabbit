@@ -1,0 +1,112 @@
+/*边距*/
+@mar-normal: 32rpx;
+@mar-long: @mar-normal * 2;
+@mar-short: @mar-normal / 2;
+@mar-order: 24rpx;
+
+/*圆角*/
+@radio-normal: 32rpx;
+@radio-half: @radio-normal / 2;
+
+/*字大小*/
+@size-normal: 28rpx;
+@size-big: @size-normal + 4;
+@size-small: @size-normal - 4;
+
+/*加粗*/
+.font-blod {
+	font-weight: bold;
+}
+
+/*颜色*/
+@color-page: #F6F6F6;
+@color-border: #F2F2F2;
+@color-font: #333;
+@color-font-normal: #666;
+@color-font-disable: #999;
+@color-white: #fff;
+
+/*配色*/
+@fg-theme: #3B68EA;
+@fg-theme-light: lighten(@fg-theme, 38%);
+.fg-blue {
+	color: #4279EF;
+}
+.fg-orange {
+	color: #ED5A00;
+}
+.fg-gray {
+	color: @color-font-disable;
+}
+.fg-red {
+	color: #DB2700;
+}
+.app-label-disable {
+	background: #f0f0f0;
+	color: @color-font-disable;
+}
+.app-label-1 {	/*绿-浅绿*/
+	color: #00A970;
+	background: #D9F2EA;
+}
+
+/*边框*/
+@border: solid 1px @color-border;
+.border-date-active{
+	border: solid 1px @fg-theme;
+	background: @fg-theme-light;
+}
+
+/*弹性布局*/
+.flex {
+	display: flex;
+}
+.flex-align-center {
+	.flex();
+	align-items: center;
+}
+.flex-align-start {
+	.flex();
+	align-items: flex-start;
+}
+.flex-align-end {
+	.flex();
+	align-items: flex-end;
+}
+.flex-align-stretch {
+	.flex();
+	align-items: stretch;
+}
+
+/*标题*/
+.app-h1, .app-h2, .app-h3, .app-h4, .app-h5, .app-h6 {
+	.font-blod();
+}
+.app-h3 {
+	font-size: 40rpx;
+}
+.app-h4 {
+	font-size: 36rpx;
+}
+.app-h5 {
+	font-size: 32rpx;
+}
+.app-span {
+	font-size: 24rpx;
+}
+
+/*分割线*/
+.app-divider {
+	display: inline-block;
+	width: 1px;
+	height: 20rpx;
+	background: #979797;
+	margin-left: @mar-short;
+	margin-right: @mar-short;
+}
+
+/*图标*/
+.icon {
+	width: 32rpx;
+	height: 32rpx;
+}
